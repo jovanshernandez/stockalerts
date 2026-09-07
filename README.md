@@ -1,5 +1,15 @@
-# stockalerts
+# Stock Alerts
 
-A python app that uses BeautifulSoup, Email and Push notifications to keep you up to date on your stocks.
+Python utility for monitoring stock prices and sending email or push notifications.
 
-NOTE: Due to Google Finance changing their stock dashboard, the regex in one of the scripts is now broken. Currently working on trying to resolve this using BeautifulSoup to scrape the Nasdaq site for prices.
+## Contents
+
+- `pricescraper.py` contains price scraping helpers.
+- `stockalerts.py` contains notification logic.
+- `symbols.csv` contains the ticker list.
+
+## Notes
+
+The original Google Finance scraping path is outdated. Review and update the data source before relying on alerts.
+
+Do not commit email credentials, API tokens, or account-specific notification settings.
